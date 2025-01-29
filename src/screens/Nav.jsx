@@ -25,7 +25,7 @@ function Navigation() {
                 </span>
 
                 
-        <div className={`overlay ${menuActive ? 'show' : ""}`} ></div>
+        <div className={`overlay ${menuActive ? 'show' : ""}`} onClick={toggleMenu}></div>
         <ul className={`hamburger-menu ${menuActive ? 'show' : ""}`}>
                     <span className="toggle-menu">
                       <ion-icon name="close-outline" onClick={toggleMenu} />

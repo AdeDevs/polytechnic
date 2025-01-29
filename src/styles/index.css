@@ -6,6 +6,9 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px 5px;
+    position: sticky;
+    top: 0;
+    z-index: 800;
     font-family: "Montserrat", sans-serif;
 }
 

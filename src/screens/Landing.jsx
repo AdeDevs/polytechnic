@@ -2,8 +2,10 @@ import Admission from "../assets/talent.png"
 import Screening from "../assets/connection.png"
 import Siwes from "../assets/technology.png"
 import Portal from "../assets/laptop.png"
-import About from "../assets/about.jpg"
+import { useState } from "react"
 function HomePage() {
+    const [schoolActive, isSchoolActive] = useState(null);
+
     return (
         <div className="home">
             <header className="welcome">
@@ -75,9 +77,30 @@ function HomePage() {
                     </div>
                 </div>
                 </section>
+                <h1 className="limitless">Limitless learning! Limitless opportunities!</h1>
             </div>
             <div className="our-schools">
-                <h1>our schools</h1>
+                <h1>Our schools</h1>
+                <p>
+                    Across all our three (3) schools and six (6) departments, we remain ever committed to your growth and development.
+                </p>
+                <div className="schools">
+                    <div className = {`science ${schoolActive === 0 ? "active" : ""}`} onClick={() => isSchoolActive(0)}>
+                        <section className="school-overlay"></section>
+                        <h2 className="school-head">Applied science and technology</h2>
+                        <button className="learn-btn">learn more</button>
+                    </div>
+                    <div className = {`business ${schoolActive === 1 ? "active" : ""}`} onClick={() => isSchoolActive(1)}>
+                        <section className="school-overlay"></section>
+                        <h2 className="school-head">business and management studies</h2>
+                        <button className="learn-btn">learn more</button>
+                    </div>
+                    <div className = {`engineering ${schoolActive === 2 ? "active" : ""}`} onClick={() => isSchoolActive(2)}>
+                        <section className="school-overlay"></section>
+                        <h2 className="school-head">engineering technology</h2>
+                        <button className="learn-btn">learn more</button>
+                    </div>
+                </div>
             </div>
             </main>
         </div>
