@@ -7,7 +7,7 @@
 .home .welcome {
     background-image: url(../assets/Bestpotech-students1-1024x714-1.jpg);
     font-family: "Montserrat", sans-serif;
-    height: 75vh;
+    height: 92vh;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -37,13 +37,13 @@
 
 .welcome h1 {
     font-size: 37px;
-    width: 60%;
+    width: 65%;
     font-weight: 600;
     text-transform: capitalize;
 }
 
 .welcome p {
-    width: 50%;
+    width: 60%;
     font-size: 15px;
     font-weight: 300;
     color: #f3f3f3;
@@ -372,6 +372,74 @@
     top: 65%;
 }
 
+.choose {
+    padding: 20px 30px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.choose h1 {
+    font-size: 30px;
+    color: #3a7d2f;
+    font-weight: 600;
+}
+
+.choose .why {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #3a7d2f;
+    width: 100%;
+    box-sizing: border-box;
+}
+.why .answers {
+    width: 65%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    padding: 60px 20px;
+    color: #fff;
+    row-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.answers section {
+    width: 47%;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.answers h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    align-items: center;
+    display: flex;
+}
+.answers h2 span img {
+    width: 25px;
+    margin-right: 8px;
+    display: flex;
+}
+.answers p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.why .why-image {
+    background-image: url(../assets/why.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35%;
+    border-radius: 0 8px 8px 0;
+    height: auto;
+}
+
 @media (max-width: 700px) {
     .home .welcome {
         height: fit-content;
@@ -397,6 +465,25 @@
     }
     .our-schools {
         padding: 30px 15px;
+    }
+    .choose .why {
+        flex-direction: column-reverse;
+    }
+    .choose {
+        padding: 15px;
+    }
+    .why .answers {
+        width: 100%;
+        padding: 10px 20px;
+        row-gap: 40px;
+    }
+    .answers section {
+        width: 100%;
+    }
+    .why .why-image {
+        height: 25vh;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
     }
 }
 
@@ -426,10 +513,10 @@
         font-weight: 500;
     }
     .schools div {
-        height: 20vh;
+        height: 18vh;
     }
     .schools div:hover, .schools div.active {
-        height: 28vh;
+        height: 30vh;
     }
     .schools div:hover .school-head, .schools div.active .school-head {
         margin-top: -70px;

@@ -2,6 +2,10 @@ import Admission from "../assets/talent.png"
 import Screening from "../assets/connection.png"
 import Siwes from "../assets/technology.png"
 import Portal from "../assets/laptop.png"
+import Conducive from "../assets/thumb.svg"
+import Curriculum from "../assets/curriculum.svg"
+import Lecturers from "../assets/lecturers.svg"
+import Growth from "../assets/growth.svg"
 import { useState } from "react"
 function HomePage() {
     const [schoolActive, isSchoolActive] = useState(null);
@@ -100,6 +104,40 @@ function HomePage() {
                         <h2 className="school-head">engineering technology</h2>
                         <button className="learn-btn">learn more</button>
                     </div>
+                </div>
+            </div>
+            <div className="choose">
+                <h1>Why Choose Us</h1>
+                <div className="why">
+
+                <div className="answers">
+                    <section>
+                        <h2><span><img src={Curriculum} alt="" /></span>Great Curriculum</h2>
+                        <p>
+                            Our curriculum is updated and standardized to suit progress in Professionalism making our students equipped with the Industry Trends.
+                        </p>
+                    </section>
+                    <section>
+                        <h2><span><img src={Lecturers} alt="" /></span>Qualified teachers</h2>
+                        <p>
+                            Our faculty members are experienced Academics with research and industry skills and experience.
+                        </p>
+                    </section>
+                    <section>
+                        <h2><span><img src={Conducive} alt="" /></span>conducive learning environment</h2>
+                        <p>
+                            We have a wide range of facilities for learning, ranging from laboratories, ICT, Entrepreneurship and Sports.
+                        </p>
+                    </section>
+                    <section>
+                        <h2><span><img src={Growth} alt="" /></span>focus on entrepreneurship</h2>
+                        <p>
+                            We are also open to students who yearn for skills acquisition in order for them to be self-reliant. skills.
+                        </p>
+                    </section>
+                </div>
+
+                <div className="why-image"></div>
                 </div>
             </div>
             </main>
