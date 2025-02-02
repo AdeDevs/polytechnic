@@ -6,6 +6,13 @@ import Conducive from "../assets/thumb.svg"
 import Curriculum from "../assets/curriculum.svg"
 import Lecturers from "../assets/lecturers.svg"
 import Growth from "../assets/growth.svg"
+import SIWES from "../assets/all.jpg"
+import Announcement from "../assets/announcement.jpg"
+import IAnnouncement from "../assets/important-announcement.jpg"
+import Scholarship from "../assets/scholarship.jpg"
+import FUTA from "../assets/FUTA.jpg"
+import Notice from "../assets/notice.jpg"
+import Matric from "../assets/matric.jpg"
 import { useState } from "react"
 function HomePage() {
     const [schoolActive, isSchoolActive] = useState(null);
@@ -20,7 +27,7 @@ function HomePage() {
                 <button>join us today</button>
             </header>
             <main>
-            <div className="featured-links">
+                <div className="featured-links">
                 <h1>Featured Links</h1>
                 <ul className="links">
                     <li>
@@ -40,8 +47,8 @@ function HomePage() {
                         <a>student portal</a>
                     </li>
                 </ul>
-            </div>
-            <div className="about-us">
+                </div>
+                <div className="about-us">
                 <section className="about-image">
                 </section>
                 <section className="about-info">
@@ -82,8 +89,8 @@ function HomePage() {
                 </div>
                 </section>
                 <h1 className="limitless">Limitless learning! Limitless opportunities!</h1>
-            </div>
-            <div className="our-schools">
+                </div>
+                <div className="our-schools">
                 <h1>Our schools</h1>
                 <p>
                     Across all our three (3) schools and six (6) departments, we remain ever committed to your growth and development.
@@ -105,8 +112,8 @@ function HomePage() {
                         <button className="learn-btn">learn more</button>
                     </div>
                 </div>
-            </div>
-            <div className="choose">
+                </div>
+                <div className="choose">
                 <h1>Why Choose Us</h1>
                 <div className="why">
 
@@ -139,7 +146,97 @@ function HomePage() {
 
                 <div className="why-image"></div>
                 </div>
-            </div>
+                </div>
+                <div className="blog">
+                    <p>From our blog</p>
+                    <h1>Latest news & events</h1>
+                    <section className="posts-section">
+                        <div className="blog-posts">
+                            <div className="post-header"> <img src={Announcement} alt="" /> </div>
+                            <div className="post-body">
+                                <a className="title" href="#">
+                                    Schedule for Submission of Logbook/Report and SIWES Presentation for Returning Students for the 2022/2023 Academic Session
+                                </a>
+                                <a href="#"><span></span> March 16, 2023</a>
+                                <a href="#"><span></span> News & Events | Top News</a>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias ducimus aspernatur officiis...
+                                </p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div className="blog-posts">
+                            <div className="post-header"> <img src={IAnnouncement} alt="" /> </div>
+                            <div className="post-body">
+                                <a className="title" href="#">
+                                Notice: The 2020/2021 Second Semester Academic Calendar
+                                </a>
+                                <a href="#"><span></span> March 16, 2023</a>
+                                <a href="#"><span></span> News & Events | Top News</a>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias ducimus aspernatur officiis...
+                                </p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div className="blog-posts">
+                            <div className="post-header"> <img src={Scholarship} alt="" /> </div>
+                            <div className="post-body">
+                                <a className="title" href="#">
+                                    Best Solution Polytechnic Holds Scholars’ Summit 2.0
+                                </a>
+                                <a href="#"><span></span> March 16, 2023</a>
+                                <a href="#"><span></span> News & Events | Top News</a>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias ducimus aspernatur officiis...
+                                </p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div className="blog-posts">
+                            <div className="post-header"> <img src={FUTA} alt="" /> </div>
+                            <div className="post-body">
+                                <a className="title" href="#">
+                                    FUTA Biochemistry Department Pays Familiarization Visit to Best Solution Polytechnic
+                                </a>
+                                <a href="#"><span></span> March 16, 2023</a>
+                                <a href="#"><span></span> News & Events | Top News</a>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias ducimus aspernatur officiis...
+                                </p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div className="blog-posts">
+                            <div className="post-header"> <img src={Notice} alt="" /> </div>
+                            <div className="post-body">
+                                <a className="title" href="#">
+                                    Schedule for SIWES Presentation and Submission of Logbook/Report
+                                </a>
+                                <a href="#"><span></span> March 16, 2023</a>
+                                <a href="#"><span></span> News & Events | Top News</a>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias ducimus aspernatur officiis...
+                                </p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div className="blog-posts">
+                            <div className="post-header"> <img src={Matric} alt="" /> </div>
+                            <div className="post-body">
+                                <a className="title" href="#">
+                                    Matriculation: Rector urges new Bestpotech students to be law-abiding or face expulsion
+                                </a>
+                                <a href="#"><span></span> March 16, 2023</a>
+                                <a href="#"><span></span> News & Events | Top News</a>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid alias ducimus aspernatur officiis...
+                                </p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </main>
         </div>
     )
