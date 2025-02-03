@@ -13,6 +13,7 @@ import Scholarship from "../assets/scholarship.jpg"
 import FUTA from "../assets/FUTA.jpg"
 import Notice from "../assets/notice.jpg"
 import Matric from "../assets/matric.jpg"
+import Logo from "../assets/logo.png";
 import { useState } from "react"
 function HomePage() {
     const [schoolActive, isSchoolActive] = useState(null);
@@ -236,8 +237,42 @@ function HomePage() {
                             </div>
                         </div>
                     </section>
+                    <button className="blog-btn">VISIT OUR BLOG</button>
+                </div>
+                <div className="soe">
+                    <h1>Join our School of Entrepreneurship</h1>
+                    <p>
+                        Are you a student yearning for skills acquisition for you to be self-reliant? <br />
+                        Are you an artisan,  businessman or woman looking to add academic certifications to your vocational skills? <br />
+                        Enroll for our Diploma and Certificate courses in over eight vocational skills today!
+                    </p>
+                    <button>Enroll Now</button>
                 </div>
             </main>
+            <footer>
+                <div className="logo">
+                    <img src={Logo} alt="" />
+                </div>
+                <div className="footer-links">
+                    <ul>
+                        <li>quick links</li>
+                        <a href="#">check admission status</a>
+                        <a href="#">student portal</a>
+                        <a href="#">staff portal</a>
+                        <a href="#">webmail</a>
+                        <a href="#">staff profile</a>
+                        <a href="#">E-learning (LMS)</a>
+                    </ul>
+                </div>
+                <div className="contact">
+                    <ul>
+                        <li>contact</li>
+                        <a href="#">info@bestpotech.edu.ng</a>
+                        <a href="#">07019188888</a>
+                        <a href="#">KM 12, Ondo Road, Akure, Nigeria</a>
+                    </ul>
+                </div>
+            </footer>
         </div>
     )
 }

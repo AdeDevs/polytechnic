@@ -169,6 +169,9 @@
     .toggle-menu {
       display: inline-flex;
     }
+    .nav-page {
+      padding: 15px 5px;
+    }
 }
 @media (min-width: 951px) {
     .hamburger-menu, .overlay {

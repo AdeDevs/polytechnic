@@ -115,7 +115,7 @@
     font-weight: 550;
     text-decoration: underline;
     text-underline-offset: 1px;
-    text-decoration-color: #f2f2f2;
+    text-decoration-color: transparent;
     transition: .3s ease-in-out;
 }
 
@@ -460,6 +460,7 @@
 
 .blog .posts-section {
     width: 100%;
+    margin-top: 15px;
     box-sizing: border-box;
     display: flex;
     row-gap: 50px;
@@ -493,11 +494,11 @@
 .blog-posts .post-body {
     width: 100%;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 20px;
 }
 
 .post-body .title {
-    font-size: 25px;
+    font-size: 19px;
     color: inherit;
     font-weight: 600;
     text-decoration: underline;
@@ -520,6 +521,7 @@
     font-size: 14px;
     cursor: pointer;
     color: #5c5c5c;
+    width: fit-content;
     text-underline-offset: 1px;
     text-decoration-color: transparent;
     transition: .3s ease-in-out;
@@ -541,19 +543,183 @@
     background-color: #3a7d2f;
     color: #fff;
     font-family: inherit;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 8px;
     font-size: 15px;
     margin-top: 10px;
     text-transform: capitalize;
-    font-weight: 400;
-    padding: 15px 25px;
+    font-weight: 500;
+    padding: 13px 25px;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
 .post-body button:hover {
-    background-color: #3e9c2e;
+    border: 2px solid #3a7d2f;
+    background-color: transparent;
+    color: #3a7d2f;
+}
+
+.blog .blog-btn {
+    background-color: #3a7d2f;
+    color: #fff;
+    font-family: inherit;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 25px;
+    width: fit-content;
+    display: block;
+    margin: 30px auto 5px auto;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.blog-btn:hover {
+    border: 2px solid #3a7d2f;
+    background-color: transparent;
+    color: #3a7d2f;
+}
+
+.soe {
+    width: 100%;
+    padding: 40px 30px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-image: url(../assets/all.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.soe::before {
+    content: "";
+    background-color: #050422c4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.soe h1, .soe p, .soe button {
+    z-index: 199;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.soe h1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.soe p {
+    font-size: 16px;
+}
+
+.soe button {
+    background-color: #3a7d2f;
+    color: #fff;
+    font-family: inherit;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    width: fit-content;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    cursor: pointer;
+    transition: .3s ease-in-out;   
+}
+
+.soe button:hover {
+    border: 2px solid #3a7d2f;
+    background-color: #fff;
+    color: #3a7d2f;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dedede;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer div {
+    width: 35%;
+    box-sizing: border-box;
+}
+
+footer .logo {
+    width: 20%;
+}
+
+footer .logo img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+footer li {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 6px;
+    color: #5b5b5b;
+}
+
+
+footer ul a{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #3a7d2f;
+    width: fit-content;
+    text-underline-offset: 1px;
+    text-transform: capitalize;
+    text-decoration-color: transparent;
+    transition: .3s ease-in-out;
+}
+
+footer ul a:hover {
+    text-decoration-color: #3a7d2f;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width: 950px) {
+    .posts-section .blog-posts {
+        width: 48%;
+    }
+    .blog .posts-section {
+        row-gap: 30px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -601,32 +767,27 @@
         width: 100%;
         border-radius: 8px 8px 0 0;
     }
+    .blog {
+        padding: 20px 15px;
+    }
+    footer {
+        padding: 20px 15px;
+    }
 }
 
 @media (max-width: 600px) {
+    .featured-links > h1 {
+        margin-bottom: 20px;
+    }
     .links li {
-        width: 100%;
+        width: 40%;
     }
     .our-schools .schools {
         flex-direction: column;
         overflow: hidden;
     }
     .schools div, .schools div {
-    min-width: fit-content;
-    }
-    .schools div:hover, .schools div.active {
         min-width: fit-content;
-    }
-    .schools div {
-        height: 30vh;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .schools div h2 {
-        font-size: 18px;
-        font-weight: 500;
     }
     .schools div {
         height: 18vh;
@@ -640,14 +801,78 @@
     .schools div:hover .learn-btn, .schools div.active .learn-btn {
         top: 60%;
     }
-    .blog {
-        padding: 20px 15px;
+    .soe {
+        padding: 40px 15px;
+    }
+    .soe h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+    footer {
+        row-gap: 15px;
+        margin-top: 50px;
+    }
+    footer div {
+        width: 45%;
+    }
+    footer .logo {
+        width: 100%;
+    }
+    footer .logo img {
+        width: 50%;
+    }
+    footer li {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .schools div h2 {
+        font-size: 18px;
+        font-weight: 500;
     }
     .blog .posts-section {
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 10px;
     }
     .posts-section .blog-posts {
+        width: 100%;
+    }
+    .blog-posts .post-header {
+        height: 25vh;
+    }
+    footer .logo img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .links li {
+        width: 100%;
+    }
+    .schools div h2 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .schools div {
+        height: 15vh;
+    }
+    .schools div:hover, .schools div.active {
+        height: 25vh;
+    }
+    .schools div:hover .school-head, .schools div.active .school-head {
+        margin-top: -70px;
+    }
+    .schools div:hover .learn-btn, .schools div.active .learn-btn {
+        top: 60%;
+    }
+    .blog-posts .post-header {
+        height: 20vh;
+    }
+    footer {
+        row-gap: 30px;
+    }
+    footer div {
         width: 100%;
     }
 }
