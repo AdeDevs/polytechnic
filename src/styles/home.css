@@ -786,7 +786,7 @@ footer ul a:hover {
         flex-direction: column;
         overflow: hidden;
     }
-    .schools div, .schools div {
+    .schools div, .schools div.active, .schools div:hover {
         min-width: fit-content;
     }
     .schools div {
@@ -849,22 +849,6 @@ footer ul a:hover {
 @media screen and (max-width: 400px) {
     .links li {
         width: 100%;
-    }
-    .schools div h2 {
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .schools div {
-        height: 15vh;
-    }
-    .schools div:hover, .schools div.active {
-        height: 25vh;
-    }
-    .schools div:hover .school-head, .schools div.active .school-head {
-        margin-top: -70px;
-    }
-    .schools div:hover .learn-btn, .schools div.active .learn-btn {
-        top: 60%;
     }
     .blog-posts .post-header {
         height: 20vh;
